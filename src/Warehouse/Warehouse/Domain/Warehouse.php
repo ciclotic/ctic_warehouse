@@ -59,7 +59,7 @@ class Warehouse implements WarehouseInterface
     public $enabled;
 
     /**
-     * @ORM\ManyToOne(targetEntity="CTIC\App\Company\Domain\Company")
+     * @ORM\ManyToOne(targetEntity="CTIC\App\Company\Domain\Company", inversedBy="warehouses")
      * @ORM\JoinColumn(name="company_id", referencedColumnName="id")
      *
      * @var Company
