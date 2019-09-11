@@ -2,11 +2,13 @@
 namespace CTIC\Warehouse\Warehouse\Domain;
 
 use Doctrine\ORM\Mapping as ORM;
+use ApiPlatform\Core\Annotation\ApiResource;
 use CTIC\App\Base\Domain\IdentifiableTrait;
 use CTIC\Warehouse\Warehouse\Domain\Validation\WarehouseValidation;
 use CTIC\App\Company\Domain\Company;
 
 /**
+ * @ApiResource
  * @ORM\Entity(repositoryClass="CTIC\Warehouse\Warehouse\Infrastructure\Repository\WarehouseRepository")
  */
 class Warehouse implements WarehouseInterface
